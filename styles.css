@@ -1,7 +1,7 @@
 /* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    background: url(imagenes/fondo2.jpg) no-repeat center center/cover;
+    background: url('imagenes/fondo2.jpg') no-repeat center center/cover;
     color: #343a40;
     margin: 0;
     padding: 20px;
@@ -10,7 +10,7 @@ body {
 /* Título principal */
 h1 {
     text-align: center;
-    color: white;
+    color: #dc3545;
 }
 
 /* Sección de menú */
@@ -19,7 +19,7 @@ h1 {
 }
 
 #menu h2 {
-    color: black;
+    color: #007bff;
 }
 
 /* Ítems del menú */
@@ -48,7 +48,8 @@ h1 {
     margin: 10px 0 5px;
 }
 
-#order-form select {
+#order-form select,
+#order-form input[type="text"] {
     width: 100%;
     padding: 5px;
     border: 1px solid #ced4da;

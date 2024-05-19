@@ -1,42 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Topping</title>
-  <link rel="icon" href="imagenes/favicon.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .menu-item {
-            margin-bottom: 10px;
-        }
-        .hidden {
-            display: none;
-        }
-        .total {
-            margin-top: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenido a Miglioris</h1>
+    <h1>Bienvenido a la Pizzería</h1>
     
     <div id="menu">
-        <h2>Menú Pizzas</h2>
+        <h2>Menú</h2>
         <!-- Aquí puedes agregar los platos disponibles -->
         <div class="menu-item">
             <label>
                 <input type="checkbox" class="menu-item-checkbox" data-name="Pizza Margherita" data-price="8">
                 Pizza Margherita - $8
-            </label>
-        </div>
-        <div class="menu-item">
-            <label>
-                <input type="checkbox" class="menu-item-checkbox" data-name="Pizza Margherita" data-price="15">
-                Pizza pepo - $15
             </label>
         </div>
         <div class="menu-item">
@@ -50,6 +29,22 @@
     
     <h2>Realizar Pedido</h2>
     <form id="order-form">
+        <label for="customer-type">Tipo de Cliente:</label>
+        <select id="customer-type" required>
+            <option value="Cliente">Cliente</option>
+            <option value="Mesero">Mesero</option>
+        </select>
+
+        <label for="order-type">Tipo de Pedido:</label>
+        <select id="order-type" required>
+            <option value="Local">Al Local</option>
+            <option value="Domicilio">A Domicilio</option>
+        </select>
+
+        <!-- Campo para el número de mesa -->
+        <label for="table-number">Número de Mesa:</label>
+        <input type="text" id="table-number" placeholder="Ingrese el número de mesa" />
+
         <button type="submit">Realizar Pedido</button>
     </form>
     

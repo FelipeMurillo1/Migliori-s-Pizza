@@ -1,0 +1,94 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background: url(imagenes/fondo2.jpg) no-repeat center center/cover;
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* Sección de menú */
+#menu {
+    margin-bottom: 20px;
+}
+
+#menu h2 {
+    color: black;
+}
+
+/* Ítems del menú */
+.menu-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.menu-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Formulario de pedido */
+#order-form {
+    margin-bottom: 20px;
+}
+
+#order-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#order-form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#order-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #218838;
+}
+
+/* Sección de total y estado del pedido */
+.total {
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.total h2 {
+    color: #28a745;
+}
+
+.total p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}

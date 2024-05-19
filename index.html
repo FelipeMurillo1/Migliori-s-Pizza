@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Topping</title>
+  <link rel="icon" href="imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .total {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Miglioris</h1>
+    
+    <div id="menu">
+        <h2>Menú Pizzas</h2>
+        <!-- Aquí puedes agregar los platos disponibles -->
+        <div class="menu-item">
+            <label>
+                <input type="checkbox" class="menu-item-checkbox" data-name="Pizza Margherita" data-price="8">
+                Pizza Margherita - $8
+            </label>
+        </div>
+        <div class="menu-item">
+            <label>
+                <input type="checkbox" class="menu-item-checkbox" data-name="Pizza Margherita" data-price="15">
+                Pizza pepo - $15
+            </label>
+        </div>
+        <div class="menu-item">
+            <label>
+                <input type="checkbox" class="menu-item-checkbox" data-name="Pizza Pepperoni" data-price="10">
+                Pizza Pepperoni - $10
+            </label>
+        </div>
+        <!-- Agrega más platos según sea necesario -->
+    </div>
+    
+    <h2>Realizar Pedido</h2>
+    <form id="order-form">
+        <button type="submit">Realizar Pedido</button>
+    </form>
+    
+    <div class="total hidden">
+        <h2>Total del Pedido</h2>
+        <p id="order-summary"></p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
